@@ -1,4 +1,5 @@
 <?php include('server.php') ?>
+<?php require_once('autocheck.php') ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
