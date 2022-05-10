@@ -1,13 +1,13 @@
 
 <?php include('server.php') ?>
-<?php if (isset($_SESSION['success'])) : ?>
+<?php if (isset($_SESSION['username'])) : ?>
       <?php echo "<script type='text/javascript'>
       alert('You are already logged-in')
       window.location.replace('index.php');
-      </script>";  ?>
+      </script>";  ?><?php endif ?>
       
 
-        <?php endif ?>
+        
         
 <!DOCTYPE html>
 <html>
@@ -94,6 +94,13 @@
         </div>
 
         <button class="btn mt-3" type="submit" name="login_user"> Login</button>
+
+        <div class="field-group">
+	<input type="checkbox" name="remember" id="remember" 
+    <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> />
+		<label for="remember-me">Remember me</label>
+	</div>
+        
       </form>
       <div class="text-center fs-6">
         <a href="#">Forgot your password?</a> Or

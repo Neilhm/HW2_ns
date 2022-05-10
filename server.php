@@ -55,6 +55,7 @@ include_once ("db.php");
           
          // Welcome message
          $_SESSION['success'] = "You have logged in";
+         
           
          // Page on which the user will be
          // redirected after logging in
@@ -86,7 +87,8 @@ include_once ("db.php");
          $query = "SELECT * FROM users WHERE username=
                  '$username' AND password='$password'";
          $results = mysqli_query($db, $query);
-   
+
+         
          // $results = 1 means that one user with the
          // entered username exists
          if (mysqli_num_rows($results) == 1) {
@@ -107,6 +109,29 @@ include_once ("db.php");
              array_push($errors, "Username or password incorrect");
          }
      }
+    
+
+if(!empty($_POST["login_user"])) {
+	
+	$sql = "Select * from users where username = '" . $_POST["username"] . "'";
+        if(!isset($_COOKIE["member_login"])) {
+            $sql .= " AND password = '" . md5($_POST["password"]) . "'";
+	}
+        $result = mysqli_query($db,$sql);
+	$user = mysqli_fetch_array($result);
+	if($user) {
+			$_SESSION["member_id"] = $user["member_id"];
+			
+			if(!empty($_POST["remember"])) {
+				setcookie ("member_login",$_POST["username"],time()+ (10 * 365 * 24 * 60 * 60));
+			} else {
+				if(isset($_COOKIE["member_login"])) {
+					setcookie ("member_login","");
+				}
+			}
+	} 
+}
+
  }
    
  ?>
