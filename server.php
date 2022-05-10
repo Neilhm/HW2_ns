@@ -123,7 +123,7 @@ if(!empty($_POST["login_user"])) {
 			$_SESSION["member_id"] = $user["member_id"];
 			
 			if(!empty($_POST["remember"])) {
-				setcookie ("member_login",$_POST["username"],time()+ (10 * 365 * 24 * 60 * 60));
+				setcookie ("member_login",$_POST["username"],time()+ (7 * 24 * 60 * 60));
 			} else {
 				if(isset($_COOKIE["member_login"])) {
 					setcookie ("member_login","");
