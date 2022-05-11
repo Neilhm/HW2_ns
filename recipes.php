@@ -73,21 +73,20 @@
      
         <div class="container">
           <div class="row">
-   
+          
   <li class="list-group-item">
   <div class="d-flex justify-content-center">
-  
   <div class="col-md-4">
-   <div class="card mb-4 box-shadow">
+  <div class="card mb-4 box-shadow">
  
                 <img
                 src="images/italian.jpg" height="250px"
                 />
                 <div class="card-body">
                   <p class="card-text">
-                    <div id="sor">
+                   
                    Margherita pizza (our favorite)
-                  </div>
+                 
             
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -107,7 +106,8 @@
                 </div>
               </div>
             </div>
-</div>
+            </div>
+
   </li>
 
   <li class="list-group-item">
@@ -276,14 +276,12 @@
   </li>
   </div>
 
-    </div>
-            </div>
 
             </div>
-            </div>
+           
     
           </ul>
-</div>
+
           <script>
 function sortList() {
   var list, i, switching, b, shouldSwitch;
