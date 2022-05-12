@@ -1,3 +1,8 @@
+<!-- 
+****
+ this file handles all the server-side handling (log-in, register, Remember me etc..)
+****
+ -->
 <?php 
 include_once ("db.php");
 ?>

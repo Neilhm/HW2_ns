@@ -12,8 +12,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    <link rel="stylesheet" href="style.css" />
+  
+    <link rel="stylesheet" href="style.php" />
     <title>Login</title>
 
     <link
@@ -65,6 +65,7 @@
     </nav>
     
     <div class="wrapper" id="loginForm">
+      
     <form method="post" action="login.php">
     <?php include('errors.php'); ?>
       <div class="logo">

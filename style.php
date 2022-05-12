@@ -1,3 +1,4 @@
+<?php header("Content-type: text/css"); ?>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -9,7 +10,7 @@
   max-height: 200px;
   bottom: 0px;
   width: 100%;
-  position: static; 
+  position: static;
   display: flex;
 }
 .Headers {
@@ -266,91 +267,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
-  background-color: rgba(0, 0, 0, 0.329);
-
-  
-}
-
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-body {
-  font-size: 120%;
-  background: #F8F8FF;
-}
-
-.header {
-  width: 30%;
-  margin: 50px auto 0px;
-  color: white;
-  background: #5F9EA0;
-  text-align: center;
-  border: 1px solid #B0C4DE;
-  border-bottom: none;
-  border-radius: 10px 10px 0px 0px;
-  padding: 20px;
-}
-form, .content {
-  width: 30%;
-  margin: 0px auto;
-  padding: 20px;
-  border: 1px solid #B0C4DE;
-  background: white;
-  border-radius: 0px 0px 10px 10px;
-}
-.input-group {
-  margin: 10px 10px 10px 10px;
-}
-
-.input-group label {
-  display: block;
-  text-align: left;
-  margin: 5px;
-  font-size: 20px;
-}
-.input-group input {
-  height: 32px;
-  width: 95%;
-  padding: 5px 10px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 1px solid gray;
-}
-.btn {
-  cursor: pointer;
-  padding: 12px;
-  font-size: 16px;
-  color: white;
-  background: #23585a;
-  border: none;
-  border-radius: 10px;
-}
-.error {
-  width: 92%;
-  margin: 0px auto;
-  padding: 10px;
-  border: 1px solid #a94442;
-  color: #a94442;
-  background: #f2dede;
-  border-radius: 5px;
-  text-align: left;
-}
-.success {
-  color: #3c763d;
-  background: #dff0d8;
-  border: 1px solid #3c763d;
-  margin-bottom: 20px;
-}
-#cap{
-  font-size: 0px;
-}
-#buttom{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;   
-
 }
