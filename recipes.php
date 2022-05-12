@@ -38,7 +38,10 @@
             <a class="nav-link" href="index.php">Home</a>
           </li>
           <li>
-            <a class="nav-link" href="login.php">Login</a>
+            
+          <a class="nav-link" href="index.php?logout='1'" style="color: red;">
+                   
+                Logout</a>
           </li>
           <li>
             <a class="nav-link" href="register.php">Register</a>
@@ -64,8 +67,9 @@
         </div>
       </section>
 
-      
-      <input type="button" onclick="sortList()" id="mybutton" value="Sort" />
+      <div class="d-flex justify-content-center">
+      <input type="button" class="btn btn-primary" onclick="sortList()" id="mybutton" value="Sort" />
+</div>
     
       <ul class="list-group list-group-flush" id="id01">
      
@@ -74,7 +78,8 @@
         <div class="container">
           <div class="row">
           
-  <li class="list-group-item">
+          <li class="list-group-item">Margherita pizza:
+
   <div class="d-flex justify-content-center">
   <div class="col-md-4">
   <div class="card mb-4 box-shadow">
@@ -83,16 +88,12 @@
                 src="images/italian.jpg" height="250px"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                   
-                   Margherita pizza (our favorite)
-                 
-            
+                  <p class="card-text">Margherita pizza (our favorite)
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <a href="ingredient.html">
+                      <a href="ingredient.php">
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
@@ -110,7 +111,7 @@
 
   </li>
 
-  <li class="list-group-item">
+  <li class="list-group-item">Neapolitan Pizza:
   <div class="d-flex justify-content-center">
   <div class="col-md-4">
   <div class="card mb-4 box-shadow">
@@ -119,12 +120,7 @@
                   src="images/nap.jpg" height="250px"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    Neapolitan Pizza.
-</div>
-                    
-                    
+                  <p class="card-text">Neapolitan Pizza. 
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -145,7 +141,7 @@
              
   </li>
 
-  <li class="list-group-item">
+  <li class="list-group-item">New York-Style Pizza:
   <div class="d-flex justify-content-center">
   <div class="col-md-4">
   <div class="card mb-4 box-shadow">
@@ -153,11 +149,7 @@
                  src="images/newyork.jpg" height="250px"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    New York-Style Pizza.
-</div>
-                    
+                  <p class="card-text">New York-Style Pizza.      
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -177,7 +169,7 @@
 </div>
   </li>
  
-  <li class="list-group-item">
+  <li class="list-group-item">California Pizza:
   <div class="d-flex justify-content-center">
   <div class="col-md-4">
   <div class="card mb-4 box-shadow">
@@ -185,10 +177,7 @@
                   src="images/California Pizza..jpg" height="250px"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    California Pizza.
-</div>
+                  <p class="card-text">California Pizza.
                  
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -208,7 +197,7 @@
 </div>
   </li>
   
-  <li class="list-group-item">
+  <li class="list-group-item">Sicilian Pizza:
   <div class="d-flex justify-content-center">
   <div class="col-md-4">
   <div class="card mb-4 box-shadow">
@@ -217,11 +206,7 @@
                  src="images/Sicilian Pizza..jpg" height="250px"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    Sicilian Pizza.
-</div>
-                   
+                  <p class="card-text">Sicilian Pizza.
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -242,7 +227,7 @@
   </li>
  
 
-  <li class="list-group-item">
+  <li class="list-group-item">Chicago Pizza:
   <div class="d-flex justify-content-center">
   <div class="col-md-4">
               <div class="card mb-4 box-shadow">
@@ -250,11 +235,7 @@
                   src="images/chic.jpg" height="250px"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    Chicago Pizza.
-
-</div>
+                  <p class="card-text">Chicago Pizza.
                    
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -315,231 +296,7 @@ function sortList() {
   }
 }
 </script>
-       <!--  <ul class="list-group list-group-flush" id="id01">
-      <div class="album py-5 bg-light" >
-      <div class="ss">
-        <div class="container">
-          <div class="row">
-         
-
-                <li class="list-group-item">Margherita pizza (our favorite)
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                src="images/italian.jpg" height="250px"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <div id="sor">
-                    Margherita pizza (our favorite).
-                  </div>
-                    
-                    <small>known for its ingredients representing the colours of the Italian flag. These ingredients include red tomato sauce, white mozzarella and fresh green basil. When all of these delicious flavours are combined on a hand-kneaded pizza base, a universally-adored pizza is created.</small>
-                    
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="ingredient.html">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View (working ingredients)
-                      </button>
-                    </a>
-                    </div>
-                    <small class="text-muted">30 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  src="images/nap.jpg" height="250px"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    Neapolitan Pizza.
-</div>
-                    
-                    <small>This delicious pie dates all the way back to 18th century in Naples, Italy. During this time, the poorer citizens of this seaside city frequently purchased food that was cheap and could be eaten quickly. Luckily for them, Neapolitan pizza was affordable and readily available through numerous street vendors.</small>
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                    </div>
-                    <small class="text-muted">15 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  src="images/chic.jpg" height="250px"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    Chicago Pizza.
-</div>
-                    <small> pizza with a thick crust that had raised edges, similar to a pie, and ingredients in reverse, with slices of mozzarella lining the dough followed by meat, vegetables, and then topped with a can of crushed tomatoes</small>
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                    </div>
-                    <small class="text-muted">24 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                 src="images/newyork.jpg" height="250px"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    New York-Style Pizza.
-</div>
-                    <br><small>Originally a variation of Neapolitan-style pizza, the New York slice has taken on a fame all its own, with some saying its unique flavor has to do with the minerals present in New York’s tap water supply</small>
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                    </div>
-                    <small class="text-muted">19 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                 src="images/Sicilian Pizza..jpg" height="250px"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    Sicilian Pizza.
-</div>
-                    <small>also known as "sfincione," provides a thick cut of pizza with pillowy dough, a crunchy crust, and robust tomato sauce</small>
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                    </div>
-                    <small class="text-muted">31 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  src="images/California Pizza..jpg" height="250px"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                  <div id="sor">
-                    California Pizza.
-</div>
-                    <small>or gourmet pizza, is known for its unusual ingredients.<Br>a pizza with mustard, ricotta, pate, and red pepper</small>
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                    </div>
-                    <small class="text-muted">90 mins</small>
-                  </div>
-                </div>
-              </div>
-</div>
-
-            </div>
-</div>
-          </div>
-        </div>
-       
-      </div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript">
-       
-        window.onload = function(){
-document.getElementById("mybutton").onclick = sortID;
-}
-   var sortID = function () {
-    var articles = $('div.row');
-  articles.each((art_idx, el)=>{
-    var art = $(el);
-    var boxes = art.find('.col-md-4'); //Get the boxes that have the image and name
-
    
-    boxes.detach(); //Remove the entries without losing their JS attributes
-    boxes.sort((a,b)=>{return ($(b).find('.sor').text() < $(a).find('.sor').text())?1:-1;}); //Sort by the name in the h5 title
-
-    var wrappers = art.find('.card-text'); //Get the rows
-    var wrapper_idx = -1; //At the very first element, this will be incremented to index 0
-    boxes.each((idx, box)=>{ //For each content box
-        wrapper_idx++; //For each fourth content box, move to the next row
-       
-        $(box).appendTo($(wrappers[wrapper_idx])); //Add the content box into the current row
-    });
-});
-
-};
-
-
-              </script> -->
     </main>
     <footer class="footer text-white pt-5 pb-4 bg-dark">
       <div class="container text-center text-md-left">

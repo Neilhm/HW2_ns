@@ -65,6 +65,26 @@ include_once ("db.php");
    
  // User login
  if (isset($_POST['login_user'])) {
+        
+    //USED TO USE EXAMPLE USERNAME AND PASSWORD THE OTHER CODE (AFTER EXIT) IS WORKING FINE USING DATABASE
+    require_once("users.php");
+    if (isset($users[$_POST['username']])){
+      if ($users[$_POST['username']] == $_POST['password'] ) {
+          // Storing username in session variable
+        $_SESSION['username'] = $_POST['username'];
+              
+        // Welcome message
+       
+            echo "<script type='text/javascript'>
+            alert('You logged-in succecfuly')
+            window.location.replace('index.php');
+            </script>"; 
+            
+      
+        
+       
+        exit;
+      } }
       
      // Data sanitization to prevent SQL injection
      $username = mysqli_real_escape_string($db, $_POST['username']);
@@ -97,11 +117,14 @@ include_once ("db.php");
              $_SESSION['username'] = $username;
               
              // Welcome message
-             $_SESSION['success'] = "You have logged in!";
+             echo "<script type='text/javascript'>
+             alert('You logged-in succecfuly')
+             window.location.replace('index.php');
+             </script>"; 
               
              // Page on which the user is sent
              // to after logging in
-             header('location: index.php');
+           
          }
          else {
               
@@ -110,6 +133,8 @@ include_once ("db.php");
          }
      }
     
+     
+     //REMEBER ME!!
 
 if(!empty($_POST["login_user"])) {
 	
@@ -133,5 +158,6 @@ if(!empty($_POST["login_user"])) {
 }
 
  }
+
    
  ?>

@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body id="withBackground">
+  <body id="withBackground" style=" background-color: rgba(0, 0, 0, 0.329);">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark gap-3">
       <span style="color: grey; font-size: large">Pizza El Balad</span>
 

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,15 +49,20 @@
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
           <ul class="navbar-nav ms-auto text-center">
+          <li>
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li>
             
-            <li>
-              <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="index.php?logout='1'" style="color: red;">
+                     
+                  Logout</a>
             </li>
             <li>
-              <a class="nav-link" href="register.html">Register</a>
+              <a class="nav-link" href="register.php">Register</a>
             </li>
             <li>
-              <a class="nav-link" href="recipes.html">Recipes</a>
+              <a class="nav-link" href="recipes.php">Recipes</a>
             </li>
           </ul>
         </div>
@@ -127,18 +134,46 @@
               <div class="col-xl-12">
                   <div class="recepies_text">
                       <p><h3>INGREDIENTS:</h3>.</p>
+                      <script>
+                      function hello(i){
+    var ele = document.getElementsByClassName("myelement"+i);
+    for (var i in ele)
+	ele[i].style.textDecoration='line-through'
+    
+} </script>
                       <p> <ul>
-                        <li><p>1 batch easy whole wheat pizza dough or 1 pound store-bought pizza dough</p></li>
-                        <li><p>1 large can (28 ounces) whole San Marzano tomatoes</p></li>
-                        <li><p>12 ounces (dry weight) ovoline-type mozzarella or other fresh mozzarella balls, ideally water-packed </p></li>
-                        <li><p>Handful of fresh basil, thinly sliced plus small leaves</p></li>
+                        <li><p class="myelement1">1 batch easy whole wheat pizza dough or 1 pound store-bought pizza dough
+                        <input type="checkbox" name="Check" onclick="hello(1)">
+             
+                        </p>
+                        </li>
+                        <li><p class="myelement2">1 large can (28 ounces) whole San Marzano tomatoes
+                        <input type="checkbox" name="Check" onclick="hello(2)">
+                        </p></li>
+                        <li><p class="myelement3">
+                        12 ounces (dry weight) ovoline-type mozzarella or other fresh mozzarella balls, ideally water-packed 
+                        <input type="checkbox" name="Check" onclick="hello(3)">
+                      </p></li>
+                        <li><p class="myelement4">
+                        Handful of fresh basil, thinly sliced plus small leaves
+                        <input type="checkbox" name="Check" onclick="hello(4)"></p></li>
                     </ul>.</p>
                       <p><h2>INSTRUCTIONS:</h2></p>
-                      <p>1. Preheat the oven to 500 degrees Fahrenheit with a rack in the upper third of the oven. If you’re using a baking stone or baking steel, place it on the upper rack. Prepare dough through step 5.</p>
-                      <p>2. Place a medium mixing bowl in the sink and pour the canned tomatoes into the bowl, juices and all. Crush the tomatoes by hand. Spread about ¾ cup of the tomato sauce evenly over each pizza, leaving about 1 inch bare around the edges.</p>
-                      <p>3. If your mozzarella is packed in water, drain off the water and gently pat the mozzarella dry on a clean tea towel or paper towels. If you’re working with large mozzarella balls, tear them into smaller 1-inch balls. Distribute the mozzarella over the pizza, concentrating it a bit more in the center of the pizza, as it will melt toward the edges.</p>
-                      <p>4. Bake pizzas individually on the top rack until the crust is golden and the cheese is just turning golden, about 10 to 12 minutes (or significantly less, if you’re using a baking stone/steel—keep an eye on it).</p>
-                      <p>5. Top each pizza generously with fresh basil, followed by a light back-and-forth drizzle of olive oil, a sprinkling of salt, and red pepper flakes, if you wish. Slice and enjoy. Leftover pizza will keep well in the refrigerator for up to 4 days.</p>
+                      <p class="myelement5">1. Preheat the oven to 500 degrees Fahrenheit with a rack in the upper third of the oven. If you’re using a baking stone or baking steel, place it on the upper rack. Prepare dough through step 5.
+                      <input type="checkbox" name="Check" onclick="hello(5)">
+                      </p>
+                      <p class="myelement6">2. Place a medium mixing bowl in the sink and pour the canned tomatoes into the bowl, juices and all. Crush the tomatoes by hand. Spread about ¾ cup of the tomato sauce evenly over each pizza, leaving about 1 inch bare around the edges.
+                      <input type="checkbox" name="Check" onclick="hello(6)">
+                      </p>
+                      <p class="myelement7">3. If your mozzarella is packed in water, drain off the water and gently pat the mozzarella dry on a clean tea towel or paper towels. If you’re working with large mozzarella balls, tear them into smaller 1-inch balls. Distribute the mozzarella over the pizza, concentrating it a bit more in the center of the pizza, as it will melt toward the edges.
+                      <input type="checkbox" name="Check" onclick="hello(7)">
+                      </p>
+                      <p class="myelement8">4. Bake pizzas individually on the top rack until the crust is golden and the cheese is just turning golden, about 10 to 12 minutes (or significantly less, if you’re using a baking stone/steel—keep an eye on it).
+                      <input type="checkbox" name="Check" onclick="hello(8)">
+                      </p>
+                      <p class="myelement9">5. Top each pizza generously with fresh basil, followed by a light back-and-forth drizzle of olive oil, a sprinkling of salt, and red pepper flakes, if you wish. Slice and enjoy. Leftover pizza will keep well in the refrigerator for up to 4 days.
+                      <input type="checkbox" name="Check" onclick="hello(9)">
+                      </p>
                   </div>
               </div>
           </div>

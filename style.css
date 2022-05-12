@@ -9,7 +9,7 @@
   max-height: 200px;
   bottom: 0px;
   width: 100%;
-  position: static;
+  position: static; 
   display: flex;
 }
 .Headers {
@@ -266,6 +266,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+ 
+  background-color: rgba(0, 0, 0, 0.329);
+
+  
 }
 
 
@@ -339,4 +343,14 @@ form, .content {
   background: #dff0d8;
   border: 1px solid #3c763d;
   margin-bottom: 20px;
+}
+#cap{
+  font-size: 0px;
+}
+#buttom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+
 }

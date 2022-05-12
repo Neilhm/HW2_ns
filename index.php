@@ -35,7 +35,7 @@
     />
     
   </head>
-  <body id="withBackground">
+  <body id="withBackground" >
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark gap-3">
       <span style="color: grey; font-size: large">Pizza El Balad</span>
 
@@ -57,7 +57,9 @@
           </li>
           <li>
             
-            <a class="nav-link" href="login.php">Login</a>
+          <a class="nav-link" href="index.php?logout='1'" style="color: red;">
+                   
+                Logout</a>
           </li>
           <li>
             <a class="nav-link" href="register.php">Register</a>
@@ -68,9 +70,12 @@
         </ul>
       </div>
     </nav>
-    <div class="header">
-        <h2>Home Page</h2>
+    <div class="d-flex justify-content-center">
+    <div class="header"><span style="color:white ">
+        <h2>PIZZA EL BALAD Home Page</h2>
     </div>
+</div>
+</span>
     <div class="content">
   
         <!-- Creating notification when the
@@ -94,30 +99,23 @@
         <?php  if (isset($_SESSION['username'])) : ?>
              
  
- 
-<p>
+          <div class="d-flex justify-content-center">
+          <span style="color:white"><p>
+          <br><br><br><br><br><br><br>
                 Welcome
                 <strong>
                     <?php echo $_SESSION['username']; ?>
                 </strong>
-            </p>
- 
- 
- 
-             
- 
- 
-<p>
-                <a href="index.php?logout='1'" style="color: red;">
-                    Click here to Logout
-                </a>
-            </p>
- 
+            </p></span>
+        </div>
+
+           
  
  
         <?php endif ?>
     </div>
-    <footer class="footer text-white pt-5 pb-4 bg-dark">
+    <div style="min-height: 35vh;"></div>
+    <footer class="footer text-white pt-5 pb-4 bg-dark" id="buttom">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
           <div class="text-center">
