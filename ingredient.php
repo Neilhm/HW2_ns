@@ -141,19 +141,14 @@
     var check = document.getElementsByClassName("ch"+i); 
                        
     for (var i in ele) {
-        
+  
         if (check[i].checked){
       ele[i].style.textDecoration='line-through'
         }
         else{
           ele[i].style.textDecoration='none'
         }
-                    
-                   
-
     }
-                        
-
 }
 
 

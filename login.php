@@ -102,11 +102,12 @@
 		<label for="remember-me">Remember me</label>
 	</div>
         
-      </form>
+  </form>
       <div class="text-center fs-6">
-        <a href="#">Forgot your password?</a> Or
+        <a href="forgot.php">Forgot your password?</a> Or
         <a href="register.php">Register</a>
       </div>
+
     </div>
 
     <footer class="footer text-white pt-5 pb-4 bg-dark">

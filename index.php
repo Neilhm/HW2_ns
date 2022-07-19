@@ -65,7 +65,7 @@
             <a class="nav-link" href="register.php">Register</a>
           </li>
           <li>
-            <a class="nav-link" href="recipes.php">Recipes</a>
+            <a class="nav-link" href="recipes.php?search=">Recipes</a>
           </li>
         </ul>
       </div>

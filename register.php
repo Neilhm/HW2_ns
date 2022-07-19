@@ -15,6 +15,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  
     <link rel="stylesheet" href="style.php" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -22,9 +30,20 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <title>Register</title>
   </head>
   <body id="withBackground">
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark gap-3">
       <span style="color: grey; font-size: large">Pizza El Balad</span>
 
@@ -90,8 +109,6 @@
             id="pwd"
             placeholder="Password"
             required
-            
-          
           />
         </div>
         <div class="form-field d-flex align-items-center">
@@ -106,7 +123,42 @@
           />
         </div>
 
-        <button class="btn mt-3" type="submit " name="reg_user">Register</button>
+       
+        <div class="col-xl-6 col-md-6">
+        <div>
+        <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 Register
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              
+                              <h5 class="modal-title" id="exampleModalLabel">Share To A Friend!</h5>
+                              
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- <h6>Verify your email</h6>
+                              <input
+                              type="text"
+                              name="email" 
+                              id="email"
+                              placeholder="Username"
+                            /> -->
+                            </div>
+                            <div class="modal-footer">
+                            <button class="btn mt-3" type="submit " name="reg_user">Verify</button>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                             
+                            </div>
+                          </div>
+                        </div>
+</div>
+                      </div>
+</div>
+
+</div>
       </form>
       <div class="text-center fs-6">Join Us</div>
     </div>
